@@ -3,6 +3,12 @@ package com.archit.springcoredemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/*
+@SpringBootApplication(
+		scanBasePackages = {"com.archit.springcoredemo",
+				"com.archit.util"}
+)
+*/
 @SpringBootApplication
 public class SpringcoredemoApplication {
 
@@ -11,3 +17,4 @@ public class SpringcoredemoApplication {
 	}
 
 }
+

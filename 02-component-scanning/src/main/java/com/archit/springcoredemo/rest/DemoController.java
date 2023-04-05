@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
+    @GetMapping("/")
+    private String[] home(){
+        return new String[]{"This is the Homepage", "/dailyworkout"};
+    }
+
     // define a private field for the dependency
     private Coach myCoach;
 
