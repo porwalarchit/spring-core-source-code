@@ -16,8 +16,7 @@ public class DemoController {
         return new String[]{"This is the Homepage of Bean configuration method.", "/dailyworkout"};
     }
 
-    @Autowired
-    public DemoController(@Qualifier("swimCoach") Coach theCoach ){
+    public DemoController(Coach theCoach ){
         System.out.println("In Constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
     }
